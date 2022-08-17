@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="card-group">
+        <div class="card">
+            <p>Hello Earth!</p>
+        </div>
+
+    </div>
+
+
+    <style>
+        .card-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            /* flex-basis: 300px; */
+            width: 100vw;
+            height: 100vh;
+            background-color: yellow;
+            display: grid;
+            place-items: center;
+        }
+
+        .card p {
+            font-size: 100px;
+            font-weight: 900;
+        }
+
+        @media (max-width: 1000px) {
+            .card {
+                background-color: blue;
+            }
+            .card p {
+                color: white;
+            font-size: 70px;
+            font-weight: 500;
+        }
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: 100vw;
+                height: 100vh;
+                background-color: green;
+            }
+            .card p {
+                color: white;
+            font-size: 50px;
+            font-weight: 100;
+        }
+        }
+    </style>
+</body>
+
+</html>
